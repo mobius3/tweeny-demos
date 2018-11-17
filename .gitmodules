@@ -1,0 +1,3 @@
+[submodule "libs/tweeny"]
+	path = libs/tweeny
+	url = https://github.com/mobius3/tweeny.git
