@@ -22,40 +22,52 @@ Showcases how can you interpolate hetergoneous values in a single tween.
 
 # Getting started
 
-1. To build the demo code you should first clone this repository and its
+To build the demo code you should first clone this repository and its
 submodules. It can be done with a single command:
 ```
 git clone --recursive https://github.com/mobius3/tweeny-demos.git
 ```
-2. Create a build folder inside it:
+
+If you decide to download an archive of this repository (as opposed of
+cloning it), be sure to also download `tweeny` and put it inside the
+`libs/tweeny` folder.
+
+
+### Linux, MacOS and Unix
+
+1. Create a build folder inside the newly cloned repository:
 ```
 cd tweeny-temos
 mkdir build
 ```
-3. Execute `cmake` inside:
+2. Execute `cmake` inside:
 ```
 cd build
 cmake ...
 ```
 
-4. Build the example you want to see:
+3. Build the example you want to see:
 ```
 make easings
 ```
 
-5. The built code will be available under the `build/src` folder, to execute it:
+4. The built code will be available under the `build/src` folder, to execute it:
 ```
 ./src/easings
 ```
 
-This process might be different on Windows platform, specially when executing
-setp *3*. I recommend using the `cmake-gui` command.
+### Windows
+
+1. Open CMake GUI and select the top level directory of tweeny as source
+2. Select or create a build folder (it can be inside of tweeny)
+3. Select the generator (depending on your compiler/IDE)
+4. Click GENERATE
+5. Open the generated project in your IDE, select the target and run it from there.
 
 # Contributing
 
 If you have an idea for a demo, you are welcome to submit a pull request. See
 the [tweeny repository] for instructions on code style.
-
 
 [Tweeny]: mobius3.github.io/tweeny
 [tweeny repository]: github.com/mobius3/tweeny
